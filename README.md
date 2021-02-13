@@ -29,7 +29,7 @@ This pallet does not depend on any other FRAME pallet or externally developed mo
 To add this pallet to your runtime, simply include the following to your runtime's `Cargo.toml` file:
 
 ```TOML
-[dependencies.substrate-pallet-template]
+[dependencies.pallet-template]
 default_features = false
 git = 'https://github.com/substrate-developer-hub/substrate-pallet-template.git'
 ```
@@ -39,7 +39,7 @@ and update your runtime's `std` feature to include this pallet:
 ```TOML
 std = [
     # --snip--
-    'example_pallet/std',
+    'pallet-template/std',
 ]
 ```
 
@@ -49,7 +49,7 @@ You should implement it's trait like so:
 
 ```rust
 /// Used for test_module
-impl example_pallet::Trait for Runtime {
+impl pallet_template::Config for Runtime {
 	type Event = Event;
 }
 ```
@@ -57,7 +57,7 @@ impl example_pallet::Trait for Runtime {
 and include it in your `construct_runtime!` macro:
 
 ```rust
-ExamplePallet: substrate_pallet_template::{Module, Call, Storage, Event<T>},
+TemplatePallet: pallet_template::{Module, Call, Storage, Event<T>},
 ```
 
 ### Genesis Configuration
@@ -71,5 +71,3 @@ You can view the reference docs for this pallet by running:
 ```
 cargo doc --open
 ```
-
-or by visiting this site: <Add Your Link>
