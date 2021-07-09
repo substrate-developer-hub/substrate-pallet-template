@@ -1,3 +1,8 @@
+> :information_source: This repository has been deprecated in favor of the [Substrate Node Template](https://github.com/substrate-developer-hub/substrate-node-template).
+> 
+> You can still create your own custom pallets in their own crate by extracting the [`/pallet/template/`](https://github.com/substrate-developer-hub/substrate-node-template/tree/master/pallets/template) folder of the `substrate-node-template` project.
+
+
 # Substrate Pallet Template
 
 This is a template for a Substrate pallet which lives as its own crate so it can be imported into multiple runtimes. It is based on the ["template" pallet](https://github.com/paritytech/substrate/tree/master/bin/node-template/pallets/template) that is included with the [Substrate node template](https://github.com/paritytech/substrate/tree/master/bin/node-template).
